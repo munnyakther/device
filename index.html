@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calcutor</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!--bostrap link end-->
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!--css link-->
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" >
+  </head>
+  <body>
+  <header>
+    <div class="container">
+      <form>
+        <div class="base">
+          <h4>Madina Gold Industry</h4>
+          <p class="date_today"><time id="currentDate" datetime=""></time></p>
+
+        </div>
+        <div class="block">
+          <p class="title">Date</p>
+          <input
+            type="text"
+            name="date"
+            id="date"
+            placeholder="dd"
+            minlength="1"
+            maxlength="2"
+            required
+          />
+        </div>
+
+        <div class="block">
+          <p class="title">Month</p>
+          <input
+            type="text"
+            name="month"
+            id="month"
+            placeholder="mm"
+            minlength="1"
+            maxlength="2"
+            required
+          />
+        </div>
+
+        <div class="block">
+          <p class="title">Year</p>
+          <input
+            type="text"
+            name="year"
+            id="year"
+            placeholder="yyyy"
+            minlength="4"
+            maxlength="4"
+            required
+          />
+        </div>
+        <div class="calculator">
+            <h2>Simple Interest Calculator</h2>
+            <label for="number">Principal</label>
+            <br>
+            <input type="amount" placeholder="Enter Principal Amount" id="amount">
+            <br>
+            <label for="rate">Rate (%)</label>
+            <br>
+            <input type="number" placeholder="Enter Rate" id="rate">
+            <br>
+            
+            <!-- <button onclick="answer()">Calculate</button>
+            <button onclick="age()">joha</button> -->
+          <input type="button"  value="Calculate" placeholder="" onclick="age()"/> 
+
+            <p>Principal Amonut <span id="output_1"></span></p>
+            <p>Total Interest <span id="output_2"></span></p>
+            <p>Date : <span id="output_3"></span></p>
+          </div>
+
+        <div class="base">
+        </div>
+
+        <div class="age" id="age"></div>
+
+
+        
+
+        
+      </form>
+    </div>
+
+
+    <!--now active it using javascript code-->
+    <script src="index.js"></script> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+
+  </body>
+</html>
+
+
+
